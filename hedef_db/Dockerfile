@@ -1,8 +1,8 @@
 # Use the official MariaDB image from the Docker Hub
 FROM mariadb:10.3
 
-# Set environment variables for MariaDB
-ENV MYSQL_ROOT_PASSWORD=rootpassword
+# Remove the environment variables for MariaDB
+# ENV MYSQL_ROOT_PASSWORD=rootpassword
 # ENV MYSQL_DATABASE=TestDB
 # ENV MYSQL_USER=myuser
 # ENV MYSQL_PASSWORD=mypassword

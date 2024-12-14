@@ -16,3 +16,7 @@ INSERT INTO TestTable (ID, Name) VALUES (2, 'Bob');
 INSERT INTO TestTable (ID, Name) VALUES (3, 'Charlie');
 INSERT INTO TestTable (ID, Name) VALUES (4, 'Diana');
 INSERT INTO TestTable (ID, Name) VALUES (5, 'Eve');
+
+-- Grant all privileges to the root user from any host
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'rootpassword' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
